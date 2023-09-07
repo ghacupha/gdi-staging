@@ -1,0 +1,28 @@
+{
+  "gdiStagingApp": {
+    "outletType": {
+      "home": {
+        "title": "OutletTypes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Outlet Type",
+        "createOrEditLabel": "Créer ou éditer un Outlet Type",
+        "search": "Recherche pour Outlet Type",
+        "notFound": "Aucun Outlet Type trouvé"
+      },
+      "created": "Un nouveau Outlet Type a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Outlet Type avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Outlet Type avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Outlet Type {{ id }} ?"
+      },
+      "detail": {
+        "title": "Outlet Type"
+      },
+      "id": "ID",
+      "outletTypeCode": "Outlet Type Code",
+      "outletType": "Outlet Type",
+      "outletTypeDetails": "Outlet Type Details",
+      "placeholder": "Placeholder"
+    }
+  }
+}

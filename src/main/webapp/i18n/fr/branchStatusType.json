@@ -1,0 +1,10 @@
+{
+  "gdiStagingApp": {
+    "BranchStatusType": {
+      "null": "",
+      "ACTIVE": "ACTIVE",
+      "INACTIVE": "INACTIVE",
+      "CLOSED": "CLOSED"
+    }
+  }
+}

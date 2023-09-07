@@ -1,0 +1,27 @@
+{
+  "gdiStagingApp": {
+    "isoCountryCode": {
+      "home": {
+        "title": "Iso Country Codes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Iso Country Code",
+        "createOrEditLabel": "Create or edit a Iso Country Code",
+        "search": "Search for Iso Country Code",
+        "notFound": "No Iso Country Codes found"
+      },
+      "created": "A new Iso Country Code is created with identifier {{ param }}",
+      "updated": "A Iso Country Code is updated with identifier {{ param }}",
+      "deleted": "A Iso Country Code is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Iso Country Code {{ id }}?"
+      },
+      "detail": {
+        "title": "Iso Country Code"
+      },
+      "id": "ID",
+      "countryCode": "Country Code",
+      "countryDescription": "Country Description",
+      "placeholder": "Placeholder"
+    }
+  }
+}

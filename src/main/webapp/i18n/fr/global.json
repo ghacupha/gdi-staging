@@ -9,6 +9,16 @@
         "main": "Entités",
         "erpServicePlaceholder": "Placeholder",
         "universallyUniqueMapping": "Universally Unique Mapping",
+        "bankBranchCode": "Bank Branch Code",
+        "outletStatus": "Outlet Status",
+        "outletType": "Outlet Type",
+        "countyCode": "County Code",
+        "serviceOutlet": "Service Outlet",
+        "customerIdDocumentType": "Customer ID Document Type",
+        "institutionCode": "Institution Code",
+        "mfbBranchCode": "Mfb Branch Code",
+        "isoCountryCode": "Iso Country Code",
+        "subCountyCode": "Sub County Code",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

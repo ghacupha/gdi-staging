@@ -1,0 +1,29 @@
+{
+  "gdiStagingApp": {
+    "mfbBranchCode": {
+      "home": {
+        "title": "MfbBranchCodes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Mfb Branch Code",
+        "createOrEditLabel": "Créer ou éditer un Mfb Branch Code",
+        "search": "Recherche pour Mfb Branch Code",
+        "notFound": "Aucun Mfb Branch Code trouvé"
+      },
+      "created": "Un nouveau Mfb Branch Code a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Mfb Branch Code avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Mfb Branch Code avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Mfb Branch Code {{ id }} ?"
+      },
+      "detail": {
+        "title": "Mfb Branch Code"
+      },
+      "id": "ID",
+      "bankCode": "Bank Code",
+      "bankName": "Bank Name",
+      "branchCode": "Branch Code",
+      "branchName": "Branch Name",
+      "placeholder": "Placeholder"
+    }
+  }
+}

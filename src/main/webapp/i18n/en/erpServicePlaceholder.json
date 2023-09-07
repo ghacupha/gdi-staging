@@ -22,6 +22,16 @@
       "description": "Description",
       "token": "Token",
       "containingPlaceholder": "Containing Placeholder",
+      "bankBranchCode": "Bank Branch Code",
+      "outletStatus": "Outlet Status",
+      "outletType": "Outlet Type",
+      "countyCode": "County Code",
+      "serviceOutlet": "Service Outlet",
+      "customerIDDocumentType": "Customer ID Document Type",
+      "institutionCode": "Institution Code",
+      "mfbBranchCode": "Mfb Branch Code",
+      "isoCountryCode": "Iso Country Code",
+      "subCountyCode": "Sub County Code",
       "universallyUniqueMapping": "Universally Unique Mapping"
     }
   }

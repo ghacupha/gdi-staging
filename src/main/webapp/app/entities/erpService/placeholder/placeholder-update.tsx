@@ -9,6 +9,26 @@ import { mapIdList } from 'app/shared/util/entity-utils';
 import { useAppDispatch, useAppSelector } from 'app/config/store';
 
 import { getEntities as getPlaceholders } from 'app/entities/erpService/placeholder/placeholder.reducer';
+import { IBankBranchCode } from 'app/shared/model/bank-branch-code.model';
+import { getEntities as getBankBranchCodes } from 'app/entities/bank-branch-code/bank-branch-code.reducer';
+import { IOutletStatus } from 'app/shared/model/outlet-status.model';
+import { getEntities as getOutletStatuses } from 'app/entities/outlet-status/outlet-status.reducer';
+import { IOutletType } from 'app/shared/model/outlet-type.model';
+import { getEntities as getOutletTypes } from 'app/entities/outlet-type/outlet-type.reducer';
+import { ICountyCode } from 'app/shared/model/county-code.model';
+import { getEntities as getCountyCodes } from 'app/entities/county-code/county-code.reducer';
+import { IServiceOutlet } from 'app/shared/model/service-outlet.model';
+import { getEntities as getServiceOutlets } from 'app/entities/service-outlet/service-outlet.reducer';
+import { ICustomerIDDocumentType } from 'app/shared/model/customer-id-document-type.model';
+import { getEntities as getCustomerIdDocumentTypes } from 'app/entities/customer-id-document-type/customer-id-document-type.reducer';
+import { IInstitutionCode } from 'app/shared/model/institution-code.model';
+import { getEntities as getInstitutionCodes } from 'app/entities/institution-code/institution-code.reducer';
+import { IMfbBranchCode } from 'app/shared/model/mfb-branch-code.model';
+import { getEntities as getMfbBranchCodes } from 'app/entities/mfb-branch-code/mfb-branch-code.reducer';
+import { IIsoCountryCode } from 'app/shared/model/iso-country-code.model';
+import { getEntities as getIsoCountryCodes } from 'app/entities/iso-country-code/iso-country-code.reducer';
+import { ISubCountyCode } from 'app/shared/model/sub-county-code.model';
+import { getEntities as getSubCountyCodes } from 'app/entities/sub-county-code/sub-county-code.reducer';
 import { IUniversallyUniqueMapping } from 'app/shared/model/universally-unique-mapping.model';
 import { getEntities as getUniversallyUniqueMappings } from 'app/entities/universally-unique-mapping/universally-unique-mapping.reducer';
 import { IPlaceholder } from 'app/shared/model/erpService/placeholder.model';
@@ -23,6 +43,16 @@ export const PlaceholderUpdate = () => {
   const isNew = id === undefined;
 
   const placeholders = useAppSelector(state => state.placeholder.entities);
+  const bankBranchCodes = useAppSelector(state => state.bankBranchCode.entities);
+  const outletStatuses = useAppSelector(state => state.outletStatus.entities);
+  const outletTypes = useAppSelector(state => state.outletType.entities);
+  const countyCodes = useAppSelector(state => state.countyCode.entities);
+  const serviceOutlets = useAppSelector(state => state.serviceOutlet.entities);
+  const customerIDDocumentTypes = useAppSelector(state => state.customerIDDocumentType.entities);
+  const institutionCodes = useAppSelector(state => state.institutionCode.entities);
+  const mfbBranchCodes = useAppSelector(state => state.mfbBranchCode.entities);
+  const isoCountryCodes = useAppSelector(state => state.isoCountryCode.entities);
+  const subCountyCodes = useAppSelector(state => state.subCountyCode.entities);
   const universallyUniqueMappings = useAppSelector(state => state.universallyUniqueMapping.entities);
   const placeholderEntity = useAppSelector(state => state.placeholder.entity);
   const loading = useAppSelector(state => state.placeholder.loading);
@@ -41,6 +71,16 @@ export const PlaceholderUpdate = () => {
     }
 
     dispatch(getPlaceholders({}));
+    dispatch(getBankBranchCodes({}));
+    dispatch(getOutletStatuses({}));
+    dispatch(getOutletTypes({}));
+    dispatch(getCountyCodes({}));
+    dispatch(getServiceOutlets({}));
+    dispatch(getCustomerIdDocumentTypes({}));
+    dispatch(getInstitutionCodes({}));
+    dispatch(getMfbBranchCodes({}));
+    dispatch(getIsoCountryCodes({}));
+    dispatch(getSubCountyCodes({}));
     dispatch(getUniversallyUniqueMappings({}));
   }, []);
 
