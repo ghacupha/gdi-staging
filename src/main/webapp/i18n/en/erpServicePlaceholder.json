@@ -1,0 +1,28 @@
+{
+  "gdiStagingApp": {
+    "erpServicePlaceholder": {
+      "home": {
+        "title": "Placeholders",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Placeholder",
+        "createOrEditLabel": "Create or edit a Placeholder",
+        "search": "Search for Placeholder",
+        "notFound": "No Placeholders found"
+      },
+      "created": "A new Placeholder is created with identifier {{ param }}",
+      "updated": "A Placeholder is updated with identifier {{ param }}",
+      "deleted": "A Placeholder is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Placeholder {{ id }}?"
+      },
+      "detail": {
+        "title": "Placeholder"
+      },
+      "id": "ID",
+      "description": "Description",
+      "token": "Token",
+      "containingPlaceholder": "Containing Placeholder",
+      "universallyUniqueMapping": "Universally Unique Mapping"
+    }
+  }
+}

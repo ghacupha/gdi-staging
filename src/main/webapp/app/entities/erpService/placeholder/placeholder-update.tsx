@@ -98,7 +98,7 @@ export const PlaceholderUpdate = () => {
                 />
               ) : null}
               <ValidatedField
-                label="Description"
+                label={translate('gdiStagingApp.erpServicePlaceholder.description')}
                 id="placeholder-description"
                 name="description"
                 data-cy="description"
@@ -107,12 +107,19 @@ export const PlaceholderUpdate = () => {
                   required: { value: true, message: translate('entity.validation.required') },
                 }}
               />
-              <ValidatedField label="Token" id="placeholder-token" name="token" data-cy="token" type="text" validate={{}} />
+              <ValidatedField
+                label={translate('gdiStagingApp.erpServicePlaceholder.token')}
+                id="placeholder-token"
+                name="token"
+                data-cy="token"
+                type="text"
+                validate={{}}
+              />
               <ValidatedField
                 id="placeholder-containingPlaceholder"
                 name="containingPlaceholder"
                 data-cy="containingPlaceholder"
-                label="Containing Placeholder"
+                label={translate('gdiStagingApp.erpServicePlaceholder.containingPlaceholder')}
                 type="select"
               >
                 <option value="" key="0" />

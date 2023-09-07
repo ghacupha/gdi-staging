@@ -158,7 +158,13 @@ export const UniversallyUniqueMapping = () => {
           <Form onSubmit={startSearching}>
             <FormGroup>
               <InputGroup>
-                <Input type="text" name="search" defaultValue={search} onChange={handleSearch} placeholder="Search" />
+                <Input
+                  type="text"
+                  name="search"
+                  defaultValue={search}
+                  onChange={handleSearch}
+                  placeholder={translate('gdiStagingApp.universallyUniqueMapping.home.search')}
+                />
                 <Button className="input-group-addon">
                   <FontAwesomeIcon icon="search" />
                 </Button>
@@ -268,7 +274,7 @@ export const UniversallyUniqueMapping = () => {
       {totalItems ? (
         <div className={universallyUniqueMappingList && universallyUniqueMappingList.length > 0 ? '' : 'd-none'}>
           <div className="justify-content-center d-flex">
-            <JhiItemCount page={paginationState.activePage} total={totalItems} itemsPerPage={paginationState.itemsPerPage} />
+            <JhiItemCount page={paginationState.activePage} total={totalItems} itemsPerPage={paginationState.itemsPerPage} i18nEnabled />
           </div>
           <div className="justify-content-center d-flex">
             <JhiPagination

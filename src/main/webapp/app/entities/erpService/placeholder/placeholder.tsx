@@ -151,7 +151,13 @@ export const Placeholder = () => {
           <Form onSubmit={startSearching}>
             <FormGroup>
               <InputGroup>
-                <Input type="text" name="search" defaultValue={search} onChange={handleSearch} placeholder="Search" />
+                <Input
+                  type="text"
+                  name="search"
+                  defaultValue={search}
+                  onChange={handleSearch}
+                  placeholder={translate('gdiStagingApp.erpServicePlaceholder.home.search')}
+                />
                 <Button className="input-group-addon">
                   <FontAwesomeIcon icon="search" />
                 </Button>
@@ -255,7 +261,7 @@ export const Placeholder = () => {
       {totalItems ? (
         <div className={placeholderList && placeholderList.length > 0 ? '' : 'd-none'}>
           <div className="justify-content-center d-flex">
-            <JhiItemCount page={paginationState.activePage} total={totalItems} itemsPerPage={paginationState.itemsPerPage} />
+            <JhiItemCount page={paginationState.activePage} total={totalItems} itemsPerPage={paginationState.itemsPerPage} i18nEnabled />
           </div>
           <div className="justify-content-center d-flex">
             <JhiPagination

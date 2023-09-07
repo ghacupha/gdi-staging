@@ -102,7 +102,7 @@ export const UniversallyUniqueMappingUpdate = () => {
                 />
               ) : null}
               <ValidatedField
-                label="Universal Key"
+                label={translate('gdiStagingApp.universallyUniqueMapping.universalKey')}
                 id="universally-unique-mapping-universalKey"
                 name="universalKey"
                 data-cy="universalKey"
@@ -112,7 +112,7 @@ export const UniversallyUniqueMappingUpdate = () => {
                 }}
               />
               <ValidatedField
-                label="Mapped Value"
+                label={translate('gdiStagingApp.universallyUniqueMapping.mappedValue')}
                 id="universally-unique-mapping-mappedValue"
                 name="mappedValue"
                 data-cy="mappedValue"
@@ -122,7 +122,7 @@ export const UniversallyUniqueMappingUpdate = () => {
                 id="universally-unique-mapping-parentMapping"
                 name="parentMapping"
                 data-cy="parentMapping"
-                label="Parent Mapping"
+                label={translate('gdiStagingApp.universallyUniqueMapping.parentMapping')}
                 type="select"
               >
                 <option value="" key="0" />
@@ -135,7 +135,7 @@ export const UniversallyUniqueMappingUpdate = () => {
                   : null}
               </ValidatedField>
               <ValidatedField
-                label="Placeholder"
+                label={translate('gdiStagingApp.universallyUniqueMapping.placeholder')}
                 id="universally-unique-mapping-placeholder"
                 data-cy="placeholder"
                 type="select"
