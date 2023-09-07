@@ -14,8 +14,8 @@ const initialState: EntityState<IPlaceholder> = {
   updateSuccess: false,
 };
 
-const apiUrl = 'api/app/placeholders';
-const apiSearchUrl = 'api/app/_search/placeholders';
+const apiUrl = 'api/placeholders';
+const apiSearchUrl = 'api/_search/placeholders';
 
 // Actions
 

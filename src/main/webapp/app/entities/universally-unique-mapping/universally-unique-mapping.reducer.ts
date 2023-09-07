@@ -14,8 +14,8 @@ const initialState: EntityState<IUniversallyUniqueMapping> = {
   updateSuccess: false,
 };
 
-const apiUrl = 'api/app/universally-unique-mappings';
-const apiSearchUrl = 'api/app/_search/universally-unique-mappings';
+const apiUrl = 'api/universally-unique-mappings';
+const apiSearchUrl = 'api/_search/universally-unique-mappings';
 
 // Actions
 
