@@ -14,8 +14,8 @@ const initialState: EntityState<IOutletStatus> = {
   updateSuccess: false,
 };
 
-const apiUrl = 'api/outlet-statuses';
-const apiSearchUrl = 'api/_search/outlet-statuses';
+const apiUrl = 'api/granular-data/outlet-statuses';
+const apiSearchUrl = 'api/granular-data/_search/outlet-statuses';
 
 // Actions
 

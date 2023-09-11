@@ -14,8 +14,8 @@ const initialState: EntityState<ISubCountyCode> = {
   updateSuccess: false,
 };
 
-const apiUrl = 'api/sub-county-codes';
-const apiSearchUrl = 'api/_search/sub-county-codes';
+const apiUrl = 'api/granular-data/sub-county-codes';
+const apiSearchUrl = 'api/granular-data/_search/sub-county-codes';
 
 // Actions
 

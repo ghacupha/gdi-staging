@@ -14,8 +14,8 @@ const initialState: EntityState<ICustomerIDDocumentType> = {
   updateSuccess: false,
 };
 
-const apiUrl = 'api/customer-id-document-types';
-const apiSearchUrl = 'api/_search/customer-id-document-types';
+const apiUrl = 'api/granular-data/customer-id-document-types';
+const apiSearchUrl = 'api/granular-data/_search/customer-id-document-types';
 
 // Actions
 

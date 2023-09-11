@@ -16,8 +16,8 @@ const initialState: EntityState<IIsoCountryCode> = {
   updateSuccess: false,
 };
 
-const apiUrl = 'api/iso-country-codes';
-const apiSearchUrl = 'api/_search/iso-country-codes';
+const apiUrl = 'api/granular-data/iso-country-codes';
+const apiSearchUrl = 'api/granular-data/_search/iso-country-codes';
 
 // Actions
 

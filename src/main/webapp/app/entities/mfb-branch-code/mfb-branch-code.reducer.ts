@@ -14,8 +14,8 @@ const initialState: EntityState<IMfbBranchCode> = {
   updateSuccess: false,
 };
 
-const apiUrl = 'api/mfb-branch-codes';
-const apiSearchUrl = 'api/_search/mfb-branch-codes';
+const apiUrl = 'api/granular-data/mfb-branch-codes';
+const apiSearchUrl = 'api/granular-data/_search/mfb-branch-codes';
 
 // Actions
 

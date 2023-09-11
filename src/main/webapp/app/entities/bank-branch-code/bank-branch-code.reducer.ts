@@ -16,8 +16,8 @@ const initialState: EntityState<IBankBranchCode> = {
   updateSuccess: false,
 };
 
-const apiUrl = 'api/bank-branch-codes';
-const apiSearchUrl = 'api/_search/bank-branch-codes';
+const apiUrl = 'api/granular-data/bank-branch-codes';
+const apiSearchUrl = 'api/granular-data/_search/bank-branch-codes';
 
 // Actions
 

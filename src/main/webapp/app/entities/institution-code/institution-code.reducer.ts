@@ -14,8 +14,8 @@ const initialState: EntityState<IInstitutionCode> = {
   updateSuccess: false,
 };
 
-const apiUrl = 'api/institution-codes';
-const apiSearchUrl = 'api/_search/institution-codes';
+const apiUrl = 'api/granular-data/institution-codes';
+const apiSearchUrl = 'api/granular-data/_search/institution-codes';
 
 // Actions
 
