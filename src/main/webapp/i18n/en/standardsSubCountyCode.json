@@ -1,0 +1,29 @@
+{
+  "gdiStagingApp": {
+    "standardsSubCountyCode": {
+      "home": {
+        "title": "Sub County Codes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sub County Code",
+        "createOrEditLabel": "Create or edit a Sub County Code",
+        "search": "Search for Sub County Code",
+        "notFound": "No Sub County Codes found"
+      },
+      "created": "A new Sub County Code is created with identifier {{ param }}",
+      "updated": "A Sub County Code is updated with identifier {{ param }}",
+      "deleted": "A Sub County Code is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sub County Code {{ id }}?"
+      },
+      "detail": {
+        "title": "Sub County Code"
+      },
+      "id": "ID",
+      "countyCode": "County Code",
+      "countyName": "County Name",
+      "subCountyCode": "Sub County Code",
+      "subCountyName": "Sub County Name",
+      "placeholder": "Placeholder"
+    }
+  }
+}

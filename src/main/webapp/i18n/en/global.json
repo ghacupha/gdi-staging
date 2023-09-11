@@ -19,6 +19,18 @@
         "mfbBranchCode": "Mfb Branch Code",
         "isoCountryCode": "Iso Country Code",
         "subCountyCode": "Sub County Code",
+        "servicePlaceholder": "Placeholder",
+        "standardsBankBranchCode": "Bank Branch Code",
+        "standardsOutletStatus": "Outlet Status",
+        "standardsOutletType": "Outlet Type",
+        "standardsCountyCode": "County Code",
+        "standardsServiceOutlet": "Service Outlet",
+        "standardsCustomerIdDocumentType": "Customer ID Document Type",
+        "standardsInstitutionCode": "Institution Code",
+        "standardsMfbBranchCode": "Mfb Branch Code",
+        "standardsIsoCountryCode": "Iso Country Code",
+        "standardsSubCountyCode": "Sub County Code",
+        "serviceUniversallyUniqueMapping": "Universally Unique Mapping",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

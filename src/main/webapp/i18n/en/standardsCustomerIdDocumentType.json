@@ -1,0 +1,28 @@
+{
+  "gdiStagingApp": {
+    "standardsCustomerIdDocumentType": {
+      "home": {
+        "title": "Customer ID Document Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Customer ID Document Type",
+        "createOrEditLabel": "Create or edit a Customer ID Document Type",
+        "search": "Search for Customer ID Document Type",
+        "notFound": "No Customer ID Document Types found"
+      },
+      "created": "A new Customer ID Document Type is created with identifier {{ param }}",
+      "updated": "A Customer ID Document Type is updated with identifier {{ param }}",
+      "deleted": "A Customer ID Document Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Customer ID Document Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Customer ID Document Type"
+      },
+      "id": "ID",
+      "documentCode": "Document Code",
+      "documentType": "Document Type",
+      "documentTypeDescription": "Document Type Description",
+      "placeholder": "Placeholder"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "erp": {
+    "menu": {
+      "services": {
+        "main": "Services"
+      },
+      "standards": {
+        "main": "Standards"
+      }
+    }
+  }
+}

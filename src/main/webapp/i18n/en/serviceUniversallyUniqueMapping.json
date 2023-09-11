@@ -1,0 +1,28 @@
+{
+  "gdiStagingApp": {
+    "serviceUniversallyUniqueMapping": {
+      "home": {
+        "title": "Universally Unique Mappings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Universally Unique Mapping",
+        "createOrEditLabel": "Create or edit a Universally Unique Mapping",
+        "search": "Search for Universally Unique Mapping",
+        "notFound": "No Universally Unique Mappings found"
+      },
+      "created": "A new Universally Unique Mapping is created with identifier {{ param }}",
+      "updated": "A Universally Unique Mapping is updated with identifier {{ param }}",
+      "deleted": "A Universally Unique Mapping is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Universally Unique Mapping {{ id }}?"
+      },
+      "detail": {
+        "title": "Universally Unique Mapping"
+      },
+      "id": "ID",
+      "universalKey": "Universal Key",
+      "mappedValue": "Mapped Value",
+      "parentMapping": "Parent Mapping",
+      "placeholder": "Placeholder"
+    }
+  }
+}

@@ -3,18 +3,6 @@ import { Route } from 'react-router-dom';
 
 import ErrorBoundaryRoutes from 'app/shared/error/error-boundary-routes';
 
-import Placeholder from './erpService/placeholder';
-import UniversallyUniqueMapping from './universally-unique-mapping';
-import BankBranchCode from './bank-branch-code';
-import OutletStatus from './outlet-status';
-import OutletType from './outlet-type';
-import CountyCode from './county-code';
-import ServiceOutlet from './service-outlet';
-import CustomerIDDocumentType from './customer-id-document-type';
-import InstitutionCode from './institution-code';
-import MfbBranchCode from './mfb-branch-code';
-import IsoCountryCode from './iso-country-code';
-import SubCountyCode from './sub-county-code';
 import Placeholder from './service/placeholder';
 import BankBranchCode from './standards/bank-branch-code';
 import OutletStatus from './standards/outlet-status';

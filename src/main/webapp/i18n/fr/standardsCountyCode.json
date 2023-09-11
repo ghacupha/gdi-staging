@@ -1,0 +1,29 @@
+{
+  "gdiStagingApp": {
+    "standardsCountyCode": {
+      "home": {
+        "title": "CountyCodes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau County Code",
+        "createOrEditLabel": "Créer ou éditer un County Code",
+        "search": "Recherche pour County Code",
+        "notFound": "Aucun County Code trouvé"
+      },
+      "created": "Un nouveau County Code a été créé avec l'identifiant {{ param }}",
+      "updated": "Le County Code avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le County Code avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le County Code {{ id }} ?"
+      },
+      "detail": {
+        "title": "County Code"
+      },
+      "id": "ID",
+      "countyCode": "County Code",
+      "countyName": "County Name",
+      "subCountyCode": "Sub County Code",
+      "subCountyName": "Sub County Name",
+      "placeholder": "Placeholder"
+    }
+  }
+}

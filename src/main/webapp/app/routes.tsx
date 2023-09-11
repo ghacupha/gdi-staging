@@ -10,6 +10,8 @@ import PasswordResetFinish from 'app/modules/account/password-reset/finish/passw
 import Logout from 'app/modules/login/logout';
 import Home from 'app/modules/home/home';
 import EntitiesRoutes from 'app/entities/routes';
+import StandardEntitiesRoutes from 'app/gdi/standards/routes';
+import EntityServicesRoutes from 'app/gdi/service/routes';
 import PrivateRoute from 'app/shared/auth/private-route';
 import ErrorBoundaryRoutes from 'app/shared/error/error-boundary-routes';
 import PageNotFound from 'app/shared/error/page-not-found';
@@ -62,7 +64,8 @@ const AppRoutes = () => {
           path="*"
           element={
             <PrivateRoute hasAnyAuthorities={[AUTHORITIES.USER, AUTHORITIES.GRANULAR_REPORTS_USER]}>
-              <EntitiesRoutes />
+              <StandardEntitiesRoutes />
+              <EntityServicesRoutes />
             </PrivateRoute>
           }
         />

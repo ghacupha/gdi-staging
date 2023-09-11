@@ -1,0 +1,30 @@
+{
+  "gdiStagingApp": {
+    "standardsInstitutionCode": {
+      "home": {
+        "title": "Institution Codes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Institution Code",
+        "createOrEditLabel": "Create or edit a Institution Code",
+        "search": "Search for Institution Code",
+        "notFound": "No Institution Codes found"
+      },
+      "created": "A new Institution Code is created with identifier {{ param }}",
+      "updated": "A Institution Code is updated with identifier {{ param }}",
+      "deleted": "A Institution Code is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Institution Code {{ id }}?"
+      },
+      "detail": {
+        "title": "Institution Code"
+      },
+      "id": "ID",
+      "institutionCode": "Institution Code",
+      "institutionName": "Institution Name",
+      "shortName": "Short Name",
+      "category": "Category",
+      "institutionCategory": "Institution Category",
+      "placeholder": "Placeholder"
+    }
+  }
+}
