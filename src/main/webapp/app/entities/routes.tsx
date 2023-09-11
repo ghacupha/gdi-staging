@@ -15,6 +15,18 @@ import InstitutionCode from './institution-code';
 import MfbBranchCode from './mfb-branch-code';
 import IsoCountryCode from './iso-country-code';
 import SubCountyCode from './sub-county-code';
+import Placeholder from './service/placeholder';
+import BankBranchCode from './standards/bank-branch-code';
+import OutletStatus from './standards/outlet-status';
+import OutletType from './standards/outlet-type';
+import CountyCode from './standards/county-code';
+import ServiceOutlet from './standards/service-outlet';
+import CustomerIDDocumentType from './standards/customer-id-document-type';
+import InstitutionCode from './standards/institution-code';
+import MfbBranchCode from './standards/mfb-branch-code';
+import IsoCountryCode from './standards/iso-country-code';
+import SubCountyCode from './standards/sub-county-code';
+import UniversallyUniqueMapping from './service/universally-unique-mapping';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 export default () => {
