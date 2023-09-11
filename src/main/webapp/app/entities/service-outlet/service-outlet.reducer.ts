@@ -16,8 +16,8 @@ const initialState: EntityState<IServiceOutlet> = {
   updateSuccess: false,
 };
 
-const apiUrl = 'api/service-outlets';
-const apiSearchUrl = 'api/_search/service-outlets';
+const apiUrl = 'api/granular-data/service-outlets';
+const apiSearchUrl = 'api/granular-data/_search/service-outlets';
 
 // Actions
 
