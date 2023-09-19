@@ -1,0 +1,23 @@
+{
+  "changelogDate": "20230914085816",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "transactionTypeCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "transactionTypeDetails",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "incrementalChangelog": false,
+  "jpaMetamodelFiltering": true,
+  "name": "BankTransactionType",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

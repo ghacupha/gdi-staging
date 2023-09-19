@@ -1,0 +1,28 @@
+{
+  "changelogDate": "20230912113120",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "functionCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "terminalFunctionality",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "required"]
+    },
+    {
+      "fieldName": "terminalFunctionalityDescription",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "incrementalChangelog": false,
+  "jpaMetamodelFiltering": true,
+  "name": "TerminalFunctions",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

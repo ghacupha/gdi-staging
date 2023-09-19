@@ -1,0 +1,23 @@
+{
+  "changelogDate": "20230914083553",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "sourceOfInformationTypeCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "sourceOfInformationTypeDescription",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique"]
+    }
+  ],
+  "incrementalChangelog": false,
+  "jpaMetamodelFiltering": true,
+  "name": "CrbSourceOfInformationType",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

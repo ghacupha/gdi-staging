@@ -1,6 +1,5 @@
 {
   "changelogDate": "20220406110354",
-  "clientRootFolder": "standards",
   "dto": "mapstruct",
   "fields": [
     {
@@ -32,7 +31,6 @@
       "otherEntityRelationshipName": "mfbBranchCode",
       "ownerSide": true,
       "relationshipName": "placeholder",
-      "relationshipSide": "left",
       "relationshipType": "many-to-many"
     }
   ],

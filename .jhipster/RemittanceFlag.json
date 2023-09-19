@@ -1,0 +1,30 @@
+{
+  "changelogDate": "20230914073811",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "remittanceTypeFlag",
+      "fieldType": "RemittanceTypeFlag",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "RMTIN,RMTOUT"
+    },
+    {
+      "fieldName": "remittanceType",
+      "fieldType": "RemittanceType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "INFLOWS,OUTFLOWS"
+    },
+    {
+      "fieldName": "remittanceTypeDetails",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "incrementalChangelog": false,
+  "jpaMetamodelFiltering": true,
+  "name": "RemittanceFlag",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

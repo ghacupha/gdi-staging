@@ -1,6 +1,5 @@
 {
   "changelogDate": "20220406080053",
-  "clientRootFolder": "standards",
   "dto": "mapstruct",
   "fields": [
     {
@@ -24,6 +23,18 @@
     {
       "fieldName": "institutionCategory",
       "fieldType": "String"
+    },
+    {
+      "fieldName": "institutionOwnership",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateLicensed",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "institutionStatus",
+      "fieldType": "String"
     }
   ],
   "incrementalChangelog": false,
@@ -38,7 +49,6 @@
       "otherEntityRelationshipName": "institutionCode",
       "ownerSide": true,
       "relationshipName": "placeholder",
-      "relationshipSide": "left",
       "relationshipType": "many-to-many"
     }
   ],

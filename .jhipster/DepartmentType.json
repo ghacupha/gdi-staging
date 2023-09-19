@@ -1,33 +1,33 @@
 {
-  "changelogDate": "20220301113030",
+  "changelogDate": "20230912144522",
   "dto": "mapstruct",
   "fields": [
     {
-      "fieldName": "branchStatusTypeCode",
+      "fieldName": "departmentTypeCode",
       "fieldType": "String",
       "fieldValidateRules": ["required", "unique"]
     },
     {
-      "fieldName": "branchStatusType",
-      "fieldType": "BranchStatusType",
-      "fieldValidateRules": ["required", "unique"],
-      "fieldValues": "ACTIVE,INACTIVE,CLOSED"
+      "fieldName": "departmentType",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
     },
     {
-      "fieldName": "branchStatusTypeDescription",
-      "fieldType": "String"
+      "fieldName": "departmentTypeDetails",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
     }
   ],
   "incrementalChangelog": false,
   "jpaMetamodelFiltering": true,
-  "name": "OutletStatus",
+  "name": "DepartmentType",
   "pagination": "pagination",
   "readOnly": false,
   "relationships": [
     {
-      "otherEntityField": "description",
+      "otherEntityField": "id",
       "otherEntityName": "placeholder",
-      "otherEntityRelationshipName": "outletStatus",
+      "otherEntityRelationshipName": "departmentType",
       "ownerSide": true,
       "relationshipName": "placeholder",
       "relationshipType": "many-to-many"
