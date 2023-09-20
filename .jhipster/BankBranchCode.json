@@ -1,6 +1,5 @@
 {
   "changelogDate": "20220301112455",
-  "clientRootFolder": "standards",
   "dto": "mapstruct",
   "fields": [
     {
@@ -15,7 +14,7 @@
     {
       "fieldName": "branchCode",
       "fieldType": "String",
-      "fieldValidateRules": ["unique"]
+      "fieldValidateRules": ["required"]
     },
     {
       "fieldName": "branchName",
@@ -38,7 +37,6 @@
       "otherEntityRelationshipName": "bankBranchCode",
       "ownerSide": true,
       "relationshipName": "placeholder",
-      "relationshipSide": "left",
       "relationshipType": "many-to-many"
     }
   ],

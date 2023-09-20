@@ -9,7 +9,7 @@ import { mapIdList } from 'app/shared/util/entity-utils';
 import { useAppDispatch, useAppSelector } from 'app/config/store';
 
 import { ICurrencyServiceabilityFlag } from 'app/shared/model/currency-serviceability-flag.model';
-import { CurrencyServiceabilityFlag } from 'app/shared/model/enumerations/currency-serviceability-flag.model';
+import { CurrencyServiceabilityFlagTypes } from 'app/shared/model/enumerations/currency-serviceability-flag-types.model';
 import { CurrencyServiceability } from 'app/shared/model/enumerations/currency-serviceability.model';
 import { getEntity, updateEntity, createEntity, reset } from './currency-serviceability-flag.reducer';
 
@@ -25,7 +25,7 @@ export const CurrencyServiceabilityFlagUpdate = () => {
   const loading = useAppSelector(state => state.currencyServiceabilityFlag.loading);
   const updating = useAppSelector(state => state.currencyServiceabilityFlag.updating);
   const updateSuccess = useAppSelector(state => state.currencyServiceabilityFlag.updateSuccess);
-  const currencyServiceabilityFlagValues = Object.keys(CurrencyServiceabilityFlag);
+  const currencyServiceabilityFlagTypesValues = Object.keys(CurrencyServiceabilityFlagTypes);
   const currencyServiceabilityValues = Object.keys(CurrencyServiceability);
 
   const handleClose = () => {
@@ -93,9 +93,9 @@ export const CurrencyServiceabilityFlagUpdate = () => {
                 data-cy="currencyServiceabilityFlag"
                 type="select"
               >
-                {currencyServiceabilityFlagValues.map(currencyServiceabilityFlag => (
-                  <option value={currencyServiceabilityFlag} key={currencyServiceabilityFlag}>
-                    {currencyServiceabilityFlag}
+                {currencyServiceabilityFlagTypesValues.map(currencyServiceabilityFlagTypes => (
+                  <option value={currencyServiceabilityFlagTypes} key={currencyServiceabilityFlagTypes}>
+                    {currencyServiceabilityFlagTypes}
                   </option>
                 ))}
               </ValidatedField>

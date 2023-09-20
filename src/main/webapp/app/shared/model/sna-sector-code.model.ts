@@ -5,7 +5,8 @@ export interface ISnaSectorCode {
   mainSectorTypeName?: string | null;
   subSectorCode?: string | null;
   subSectorName?: string | null;
-  subSubSectorCodeSubSubSectorName?: string | null;
+  subSubSectorCode?: string | null;
+  subSubSectorName?: string | null;
 }
 
 export const defaultValue: Readonly<ISnaSectorCode> = {};

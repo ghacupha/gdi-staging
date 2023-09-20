@@ -10,7 +10,7 @@
     {
       "fieldName": "agriculturalEnterpriseActivityType",
       "fieldType": "String",
-      "fieldValidateRules": ["required", "unique"]
+      "fieldValidateRules": ["required"]
     },
     {
       "fieldName": "agriculturalEnterpriseActivityTypeDescription",

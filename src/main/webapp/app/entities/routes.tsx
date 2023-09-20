@@ -124,6 +124,10 @@ import AcquiringIssuingFlag from './acquiring-issuing-flag';
 import CreditCardOwnership from './credit-card-ownership';
 import CategoryOfSecurity from './category-of-security';
 import NatureOfCustomerComplaints from './nature-of-customer-complaints';
+import SettlementCurrency from './settlement-currency';
+import CustomerType from './customer-type';
+import GdiMasterDataIndex from './gdi-master-data-index';
+import GdiTransactionDataIndex from './gdi-transaction-data-index';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 export default () => {
@@ -252,6 +256,10 @@ export default () => {
         <Route path="credit-card-ownership/*" element={<CreditCardOwnership />} />
         <Route path="category-of-security/*" element={<CategoryOfSecurity />} />
         <Route path="nature-of-customer-complaints/*" element={<NatureOfCustomerComplaints />} />
+        <Route path="settlement-currency/*" element={<SettlementCurrency />} />
+        <Route path="customer-type/*" element={<CustomerType />} />
+        <Route path="gdi-master-data-index/*" element={<GdiMasterDataIndex />} />
+        <Route path="gdi-transaction-data-index/*" element={<GdiTransactionDataIndex />} />
         {/* jhipster-needle-add-route-path - JHipster will add routes here */}
       </ErrorBoundaryRoutes>
     </div>

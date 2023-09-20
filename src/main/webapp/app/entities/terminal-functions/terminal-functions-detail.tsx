@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Button, Row, Col } from 'reactstrap';
-import { byteSize } from 'react-jhipster';
+import {} from 'react-jhipster';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { APP_DATE_FORMAT, APP_LOCAL_DATE_FORMAT } from 'app/config/constants';
@@ -36,10 +36,6 @@ export const TerminalFunctionsDetail = () => {
             <span id="terminalFunctionality">Terminal Functionality</span>
           </dt>
           <dd>{terminalFunctionsEntity.terminalFunctionality}</dd>
-          <dt>
-            <span id="terminalFunctionalityDescription">Terminal Functionality Description</span>
-          </dt>
-          <dd>{terminalFunctionsEntity.terminalFunctionalityDescription}</dd>
         </dl>
         <Button tag={Link} to="/terminal-functions" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" /> <span className="d-none d-md-inline">Back</span>

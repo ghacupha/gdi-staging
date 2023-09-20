@@ -8,8 +8,6 @@ import { convertDateTimeFromServer, convertDateTimeToServer, displayDefaultDateT
 import { mapIdList } from 'app/shared/util/entity-utils';
 import { useAppDispatch, useAppSelector } from 'app/config/store';
 
-import { IPlaceholder } from 'app/shared/model/service/placeholder.model';
-import { getEntities as getPlaceholders } from 'app/entities/service/placeholder/placeholder.reducer';
 import { IIsoCountryCode } from 'app/shared/model/iso-country-code.model';
 import { getEntity, updateEntity, createEntity, reset } from './iso-country-code.reducer';
 
@@ -21,7 +19,6 @@ export const IsoCountryCodeUpdate = () => {
   const { id } = useParams<'id'>();
   const isNew = id === undefined;
 
-  const placeholders = useAppSelector(state => state.placeholder.entities);
   const isoCountryCodeEntity = useAppSelector(state => state.isoCountryCode.entity);
   const loading = useAppSelector(state => state.isoCountryCode.loading);
   const updating = useAppSelector(state => state.isoCountryCode.updating);
@@ -35,8 +32,6 @@ export const IsoCountryCodeUpdate = () => {
     if (!isNew) {
       dispatch(getEntity(id));
     }
-
-    dispatch(getPlaceholders({}));
   }, []);
 
   useEffect(() => {
@@ -49,7 +44,6 @@ export const IsoCountryCodeUpdate = () => {
     const entity = {
       ...isoCountryCodeEntity,
       ...values,
-      placeholders: mapIdList(values.placeholders),
     };
 
     if (isNew) {
@@ -64,7 +58,6 @@ export const IsoCountryCodeUpdate = () => {
       ? {}
       : {
           ...isoCountryCodeEntity,
-          placeholders: isoCountryCodeEntity?.placeholders?.map(e => e.id.toString()),
         };
 
   return (
@@ -94,22 +87,20 @@ export const IsoCountryCodeUpdate = () => {
                 type="text"
               />
               <ValidatedField
-                label="Placeholder"
-                id="iso-country-code-placeholder"
-                data-cy="placeholder"
-                type="select"
-                multiple
-                name="placeholders"
-              >
-                <option value="" key="0" />
-                {placeholders
-                  ? placeholders.map(otherEntity => (
-                      <option value={otherEntity.id} key={otherEntity.id}>
-                        {otherEntity.description}
-                      </option>
-                    ))
-                  : null}
-              </ValidatedField>
+                label="Continent Code"
+                id="iso-country-code-continentCode"
+                name="continentCode"
+                data-cy="continentCode"
+                type="text"
+              />
+              <ValidatedField
+                label="Continent Name"
+                id="iso-country-code-continentName"
+                name="continentName"
+                data-cy="continentName"
+                type="text"
+              />
+              <ValidatedField label="Sub Region" id="iso-country-code-subRegion" name="subRegion" data-cy="subRegion" type="text" />
               <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/iso-country-code" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />
                 &nbsp;

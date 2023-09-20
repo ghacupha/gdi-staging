@@ -1,6 +1,5 @@
 {
   "changelogDate": "20220404134249",
-  "clientRootFolder": "standards",
   "dto": "mapstruct",
   "fields": [
     {
@@ -30,7 +29,6 @@
       "otherEntityRelationshipName": "customerIDDocumentType",
       "ownerSide": true,
       "relationshipName": "placeholder",
-      "relationshipSide": "left",
       "relationshipType": "many-to-many"
     }
   ],

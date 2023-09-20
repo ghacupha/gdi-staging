@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button, Input, InputGroup, FormGroup, Form, Row, Col, Table } from 'reactstrap';
-import { byteSize, translate, getSortState, JhiPagination, JhiItemCount } from 'react-jhipster';
+import { translate, getSortState, JhiPagination, JhiItemCount } from 'react-jhipster';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { APP_DATE_FORMAT, APP_LOCAL_DATE_FORMAT } from 'app/config/constants';
@@ -172,9 +172,6 @@ export const TerminalFunctions = () => {
                 <th className="hand" onClick={sort('terminalFunctionality')}>
                   Terminal Functionality <FontAwesomeIcon icon="sort" />
                 </th>
-                <th className="hand" onClick={sort('terminalFunctionalityDescription')}>
-                  Terminal Functionality Description <FontAwesomeIcon icon="sort" />
-                </th>
                 <th />
               </tr>
             </thead>
@@ -188,7 +185,6 @@ export const TerminalFunctions = () => {
                   </td>
                   <td>{terminalFunctions.functionCode}</td>
                   <td>{terminalFunctions.terminalFunctionality}</td>
-                  <td>{terminalFunctions.terminalFunctionalityDescription}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
                       <Button

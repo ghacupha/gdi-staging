@@ -189,6 +189,15 @@ export const IsoCountryCode = () => {
                   <th className="hand" onClick={sort('countryDescription')}>
                     Country Description <FontAwesomeIcon icon="sort" />
                   </th>
+                  <th className="hand" onClick={sort('continentCode')}>
+                    Continent Code <FontAwesomeIcon icon="sort" />
+                  </th>
+                  <th className="hand" onClick={sort('continentName')}>
+                    Continent Name <FontAwesomeIcon icon="sort" />
+                  </th>
+                  <th className="hand" onClick={sort('subRegion')}>
+                    Sub Region <FontAwesomeIcon icon="sort" />
+                  </th>
                   <th />
                 </tr>
               </thead>
@@ -202,6 +211,9 @@ export const IsoCountryCode = () => {
                     </td>
                     <td>{isoCountryCode.countryCode}</td>
                     <td>{isoCountryCode.countryDescription}</td>
+                    <td>{isoCountryCode.continentCode}</td>
+                    <td>{isoCountryCode.continentName}</td>
+                    <td>{isoCountryCode.subRegion}</td>
                     <td className="text-end">
                       <div className="btn-group flex-btn-group-container">
                         <Button

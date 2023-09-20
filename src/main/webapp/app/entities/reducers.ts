@@ -119,6 +119,10 @@ import acquiringIssuingFlag from 'app/entities/acquiring-issuing-flag/acquiring-
 import creditCardOwnership from 'app/entities/credit-card-ownership/credit-card-ownership.reducer';
 import categoryOfSecurity from 'app/entities/category-of-security/category-of-security.reducer';
 import natureOfCustomerComplaints from 'app/entities/nature-of-customer-complaints/nature-of-customer-complaints.reducer';
+import settlementCurrency from 'app/entities/settlement-currency/settlement-currency.reducer';
+import customerType from 'app/entities/customer-type/customer-type.reducer';
+import gdiMasterDataIndex from 'app/entities/gdi-master-data-index/gdi-master-data-index.reducer';
+import gdiTransactionDataIndex from 'app/entities/gdi-transaction-data-index/gdi-transaction-data-index.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 const entitiesReducers = {
@@ -243,6 +247,10 @@ const entitiesReducers = {
   creditCardOwnership,
   categoryOfSecurity,
   natureOfCustomerComplaints,
+  settlementCurrency,
+  customerType,
+  gdiMasterDataIndex,
+  gdiTransactionDataIndex,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
 };
 

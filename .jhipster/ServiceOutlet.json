@@ -1,6 +1,5 @@
 {
   "changelogDate": "20220301132923",
-  "clientRootFolder": "standards",
   "dto": "mapstruct",
   "fields": [
     {
@@ -58,42 +57,36 @@
       "otherEntityRelationshipName": "serviceOutlet",
       "ownerSide": true,
       "relationshipName": "placeholder",
-      "relationshipSide": "left",
       "relationshipType": "many-to-many"
     },
     {
       "otherEntityField": "branchCode",
       "otherEntityName": "bankBranchCode",
       "relationshipName": "bankCode",
-      "relationshipSide": "left",
       "relationshipType": "many-to-one"
     },
     {
       "otherEntityField": "outletType",
       "otherEntityName": "outletType",
       "relationshipName": "outletType",
-      "relationshipSide": "left",
       "relationshipType": "many-to-one"
     },
     {
       "otherEntityField": "branchStatusType",
       "otherEntityName": "outletStatus",
       "relationshipName": "outletStatus",
-      "relationshipSide": "left",
       "relationshipType": "many-to-one"
     },
     {
       "otherEntityField": "countyName",
       "otherEntityName": "countyCode",
       "relationshipName": "countyName",
-      "relationshipSide": "left",
       "relationshipType": "many-to-one"
     },
     {
       "otherEntityField": "subCountyName",
       "otherEntityName": "countyCode",
       "relationshipName": "subCountyName",
-      "relationshipSide": "left",
       "relationshipType": "many-to-one"
     }
   ],

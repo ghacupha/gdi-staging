@@ -11,11 +11,6 @@
       "fieldName": "terminalFunctionality",
       "fieldType": "String",
       "fieldValidateRules": ["required", "required"]
-    },
-    {
-      "fieldName": "terminalFunctionalityDescription",
-      "fieldType": "byte[]",
-      "fieldTypeBlobContent": "text"
     }
   ],
   "incrementalChangelog": false,

@@ -10,7 +10,7 @@
     {
       "fieldName": "submittingInstitutionCategoryType",
       "fieldType": "String",
-      "fieldValidateRules": ["required", "unique"]
+      "fieldValidateRules": ["required"]
     },
     {
       "fieldName": "submittingInstitutionCategoryDetails",

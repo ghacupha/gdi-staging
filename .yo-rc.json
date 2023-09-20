@@ -21,6 +21,7 @@
     "enableTranslation": false,
     "entities": [
       "Placeholder",
+      "SettlementCurrency",
       "BankBranchCode",
       "OutletStatus",
       "OutletType",
@@ -32,6 +33,7 @@
       "IsoCountryCode",
       "SubCountyCode",
       "UniversallyUniqueMapping",
+      "CustomerType",
       "LegalStatus",
       "InsiderCategoryTypes",
       "GenderType",
@@ -140,7 +142,9 @@
       "AcquiringIssuingFlag",
       "CreditCardOwnership",
       "CategoryOfSecurity",
-      "NatureOfCustomerComplaints"
+      "NatureOfCustomerComplaints",
+      "GdiMasterDataIndex",
+      "GdiTransactionDataIndex"
     ],
     "entitySuffix": "",
     "jhiPrefix": "jhi",

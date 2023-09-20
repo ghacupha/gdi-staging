@@ -369,6 +369,21 @@ const EntitiesMenu = () => {
       <MenuItem icon="asterisk" to="/nature-of-customer-complaints">
         Nature Of Customer Complaints
       </MenuItem>
+      <MenuItem icon="asterisk" to="/settlement-currency">
+        Settlement Currency
+      </MenuItem>
+      <MenuItem icon="asterisk" to="/security-clearance">
+        Security Clearance
+      </MenuItem>
+      <MenuItem icon="asterisk" to="/customer-type">
+        Customer Type
+      </MenuItem>
+      <MenuItem icon="asterisk" to="/gdi-master-data-index">
+        Gdi Master Data Index
+      </MenuItem>
+      <MenuItem icon="asterisk" to="/gdi-transaction-data-index">
+        Gdi Transaction Data Index
+      </MenuItem>
       {/* jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here */}
     </>
   );

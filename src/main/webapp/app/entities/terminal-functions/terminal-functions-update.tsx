@@ -100,13 +100,6 @@ export const TerminalFunctionsUpdate = () => {
                   required: { value: true, message: 'This field is required.' },
                 }}
               />
-              <ValidatedField
-                label="Terminal Functionality Description"
-                id="terminal-functions-terminalFunctionalityDescription"
-                name="terminalFunctionalityDescription"
-                data-cy="terminalFunctionalityDescription"
-                type="textarea"
-              />
               <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/terminal-functions" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />
                 &nbsp;

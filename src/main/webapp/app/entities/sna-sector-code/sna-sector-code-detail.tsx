@@ -49,9 +49,13 @@ export const SnaSectorCodeDetail = () => {
           </dt>
           <dd>{snaSectorCodeEntity.subSectorName}</dd>
           <dt>
-            <span id="subSubSectorCodeSubSubSectorName">Sub Sub Sector Code Sub Sub Sector Name</span>
+            <span id="subSubSectorCode">Sub Sub Sector Code</span>
           </dt>
-          <dd>{snaSectorCodeEntity.subSubSectorCodeSubSubSectorName}</dd>
+          <dd>{snaSectorCodeEntity.subSubSectorCode}</dd>
+          <dt>
+            <span id="subSubSectorName">Sub Sub Sector Name</span>
+          </dt>
+          <dd>{snaSectorCodeEntity.subSubSectorName}</dd>
         </dl>
         <Button tag={Link} to="/sna-sector-code" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" /> <span className="d-none d-md-inline">Back</span>

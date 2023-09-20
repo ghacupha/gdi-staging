@@ -1,6 +1,5 @@
 {
   "changelogDate": "20220301131552",
-  "clientRootFolder": "standards",
   "dto": "mapstruct",
   "fields": [
     {
@@ -16,12 +15,12 @@
     {
       "fieldName": "subCountyCode",
       "fieldType": "Integer",
-      "fieldValidateRules": ["required", "unique"]
+      "fieldValidateRules": ["required"]
     },
     {
       "fieldName": "subCountyName",
       "fieldType": "String",
-      "fieldValidateRules": ["required", "unique"]
+      "fieldValidateRules": ["required"]
     }
   ],
   "incrementalChangelog": false,
@@ -36,7 +35,6 @@
       "otherEntityRelationshipName": "countyCode",
       "ownerSide": true,
       "relationshipName": "placeholder",
-      "relationshipSide": "left",
       "relationshipType": "many-to-many"
     }
   ],

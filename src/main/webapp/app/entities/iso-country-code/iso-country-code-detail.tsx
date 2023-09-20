@@ -36,17 +36,18 @@ export const IsoCountryCodeDetail = () => {
             <span id="countryDescription">Country Description</span>
           </dt>
           <dd>{isoCountryCodeEntity.countryDescription}</dd>
-          <dt>Placeholder</dt>
-          <dd>
-            {isoCountryCodeEntity.placeholders
-              ? isoCountryCodeEntity.placeholders.map((val, i) => (
-                  <span key={val.id}>
-                    <a>{val.description}</a>
-                    {isoCountryCodeEntity.placeholders && i === isoCountryCodeEntity.placeholders.length - 1 ? '' : ', '}
-                  </span>
-                ))
-              : null}
-          </dd>
+          <dt>
+            <span id="continentCode">Continent Code</span>
+          </dt>
+          <dd>{isoCountryCodeEntity.continentCode}</dd>
+          <dt>
+            <span id="continentName">Continent Name</span>
+          </dt>
+          <dd>{isoCountryCodeEntity.continentName}</dd>
+          <dt>
+            <span id="subRegion">Sub Region</span>
+          </dt>
+          <dd>{isoCountryCodeEntity.subRegion}</dd>
         </dl>
         <Button tag={Link} to="/iso-country-code" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" /> <span className="d-none d-md-inline">Back</span>

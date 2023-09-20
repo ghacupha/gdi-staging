@@ -119,10 +119,17 @@ export const SnaSectorCodeUpdate = () => {
                 type="text"
               />
               <ValidatedField
-                label="Sub Sub Sector Code Sub Sub Sector Name"
-                id="sna-sector-code-subSubSectorCodeSubSubSectorName"
-                name="subSubSectorCodeSubSubSectorName"
-                data-cy="subSubSectorCodeSubSubSectorName"
+                label="Sub Sub Sector Code"
+                id="sna-sector-code-subSubSectorCode"
+                name="subSubSectorCode"
+                data-cy="subSubSectorCode"
+                type="text"
+              />
+              <ValidatedField
+                label="Sub Sub Sector Name"
+                id="sna-sector-code-subSubSectorName"
+                name="subSubSectorName"
+                data-cy="subSubSectorName"
                 type="text"
               />
               <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/sna-sector-code" replace color="info">

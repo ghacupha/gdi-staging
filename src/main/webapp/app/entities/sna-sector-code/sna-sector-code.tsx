@@ -176,8 +176,11 @@ export const SnaSectorCode = () => {
                 <th className="hand" onClick={sort('subSectorName')}>
                   Sub Sector Name <FontAwesomeIcon icon="sort" />
                 </th>
-                <th className="hand" onClick={sort('subSubSectorCodeSubSubSectorName')}>
-                  Sub Sub Sector Code Sub Sub Sector Name <FontAwesomeIcon icon="sort" />
+                <th className="hand" onClick={sort('subSubSectorCode')}>
+                  Sub Sub Sector Code <FontAwesomeIcon icon="sort" />
+                </th>
+                <th className="hand" onClick={sort('subSubSectorName')}>
+                  Sub Sub Sector Name <FontAwesomeIcon icon="sort" />
                 </th>
                 <th />
               </tr>
@@ -195,7 +198,8 @@ export const SnaSectorCode = () => {
                   <td>{snaSectorCode.mainSectorTypeName}</td>
                   <td>{snaSectorCode.subSectorCode}</td>
                   <td>{snaSectorCode.subSectorName}</td>
-                  <td>{snaSectorCode.subSubSectorCodeSubSubSectorName}</td>
+                  <td>{snaSectorCode.subSubSectorCode}</td>
+                  <td>{snaSectorCode.subSubSectorName}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`/sna-sector-code/${snaSectorCode.id}`} color="info" size="sm" data-cy="entityDetailsButton">
