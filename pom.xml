@@ -9,7 +9,7 @@
     <artifactId>gdi-staging</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>GDI Staging</name>
-    <description>Mark IV No 1 (David Series) Client 0.0.1-SNAPSHOT</description>
+    <description>Mark IV No 2 (David Series) Client 0.0.1-SNAPSHOT</description>
 
     <repositories>
         <!-- jhipster-needle-maven-repository -->
