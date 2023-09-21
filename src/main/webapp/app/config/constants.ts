@@ -2,6 +2,7 @@ export const AUTHORITIES = {
   ADMIN: 'ROLE_ADMIN',
   USER: 'ROLE_USER',
   GRANULAR_REPORTS_USER: 'ROLE_GRANULAR_REPORTS_USER',
+  DEV: 'ROLE_DEV',
 };
 
 export const messages = {

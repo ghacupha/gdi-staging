@@ -12,6 +12,8 @@ import AboutMenu from 'app/shared/layout/menus/about';
 export interface IHeaderProps {
   isAuthenticated: boolean;
   isAdmin: boolean;
+  isAUser: boolean;
+  isDeveloper: boolean;
   ribbonEnv: string;
   isInProduction: boolean;
   isOpenAPIEnabled: boolean;
@@ -41,8 +43,8 @@ const Header = (props: IHeaderProps) => {
         <Collapse isOpen={menuOpen} navbar>
           <Nav id="header-tabs" className="ms-auto" navbar>
             <Home />
-            {props.isAuthenticated && <EntitiesMenu />}
-            {props.isAuthenticated && <MasterDataMenu />}
+            {props.isAuthenticated && props.isDeveloper && <EntitiesMenu />}
+            {props.isAuthenticated && props.isAUser && <MasterDataMenu />}
             {props.isAuthenticated && props.isAdmin && (
               <AdminMenu showOpenAPI={props.isOpenAPIEnabled} showDatabase={!props.isInProduction} />
             )}
