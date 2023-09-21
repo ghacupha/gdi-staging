@@ -70,6 +70,26 @@ export const About = () => {
           </li>
         </ul>
 
+        <p>We have used FlatIcon images</p>
+
+        <ul>
+          <li>
+            <a href="https://www.flaticon.com/free-icons/analysis" title="analysis icons">
+              Analysis icons created by RaftelDesign - Flaticon
+            </a>
+          </li>
+          <li>
+            <a href="https://www.flaticon.com/free-icons/statistics" title="statistics icons">
+              Statistics icons created by Freepik - Flaticon
+            </a>
+          </li>
+          <li>
+            <a href="https://www.flaticon.com/free-icons/dashboard" title="dashboard icons">
+              Dashboard icons created by Eucalyp - Flaticon
+            </a>
+          </li>
+        </ul>
+
         <p>
           If you like JHipster, don&apos;t forget to give us a star on{' '}
           <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">
