@@ -10,7 +10,6 @@ jobs:
             NODE_VERSION: 14.15.0
             NODE_OPTIONS: "--max-old-space-size=8192"
             JHI_DISABLE_WEBPACK_LOGS: true
-            NG_CLI_ANALYTICS: false
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v1
