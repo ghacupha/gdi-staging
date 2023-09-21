@@ -12,11 +12,8 @@ export const Home = () => {
 
   return (
     <Row>
-      <Col md="3" className="pad">
-        <span className="hipster rounded" />
-      </Col>
       <Col md="9">
-        <h2>Granular Data</h2>
+        <h2>Granular Data Interface</h2>
         <p className="lead">GDI Datasets Staging</p>
         {account?.login ? (
           <div>
@@ -32,35 +29,30 @@ export const Home = () => {
               </Link>
             </Alert>
 
-            <Alert color="warning">
+            {/*<Alert color="warning">
               You don&apos;t have an account yet?&nbsp;
               <Link to="/account/register" className="alert-link">
                 Register a new account
               </Link>
-            </Alert>
+            </Alert>*/}
           </div>
         )}
-        <p>If you have any question on JHipster:</p>
+        <p>If you have any question on GDI Staging:</p>
 
         <ul>
           <li>
-            <a href="https://www.jhipster.tech/" target="_blank" rel="noopener noreferrer">
-              JHipster homepage
+            <a href="https://github.com/ghacupha/gdi-staging" target="_blank" rel="noopener noreferrer">
+              GDI homepage
             </a>
           </li>
           <li>
-            <a href="https://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener noreferrer">
-              JHipster on Stack Overflow
+            <a href="https://github.com/ghacupha/gdi-staging/issues?state=open" target="_blank" rel="noopener noreferrer">
+              GDI Staging bug tracker
             </a>
           </li>
           <li>
-            <a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener noreferrer">
-              JHipster bug tracker
-            </a>
-          </li>
-          <li>
-            <a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">
-              JHipster public chat room
+            <a href="https://matrix.to/#/#gdi-staging:gitter.im" target="_blank" rel="noopener noreferrer">
+              GDI Staging public chat room
             </a>
           </li>
           <li>
@@ -77,6 +69,9 @@ export const Home = () => {
           </a>
           !
         </p>
+      </Col>
+      <Col md="3" className="pad">
+        <span className="hipster rounded" />
       </Col>
     </Row>
   );

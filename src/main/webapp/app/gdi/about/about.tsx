@@ -40,6 +40,7 @@ export const About = () => {
             </Alert>*/}
           </div>
         )}
+        <p>GDI Staging is a ReactJS client scaffolded from Jhipster version 7.9.4, currently running on ERP-System version 1.5.1 backend</p>
         <p>If you have any question on JHipster:</p>
 
         <ul>
@@ -70,7 +71,27 @@ export const About = () => {
           </li>
         </ul>
 
-        <p>We have used FlatIcon images</p>
+        <p>If you have any question on ERP-System:</p>
+
+        <ul>
+          <li>
+            <a href="https://github.com/ghacupha/erp-system" target="_blank" rel="noopener noreferrer">
+              ERP-System homepage
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ghacupha/erp-system/issues?state=open" target="_blank" rel="noopener noreferrer">
+              ERP-System bug tracker
+            </a>
+          </li>
+          <li>
+            <a href="https://matrix.to/#/#erp-system:gitter.im" target="_blank" rel="noopener noreferrer">
+              ERP-System public chat room
+            </a>
+          </li>
+        </ul>
+
+        <p>We have used FlatIcon and Iconpacks images</p>
 
         <ul>
           <li>
@@ -87,6 +108,9 @@ export const About = () => {
             <a href="https://www.flaticon.com/free-icons/dashboard" title="dashboard icons">
               Dashboard icons created by Eucalyp - Flaticon
             </a>
+          </li>
+          <li>
+            Home icons by <a href="https://iconpacks.net/?utm_source=link-attribution&utm_content=18167">Iconpacks</a>
           </li>
         </ul>
 
