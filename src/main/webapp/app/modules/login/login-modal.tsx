@@ -77,9 +77,9 @@ const LoginModal = (props: ILoginModalProps) => {
               Did you forget your password?
             </Link>
           </Alert>
-          <Alert color="warning">
+          {/*<Alert color="warning">
             <span>You don&apos;t have an account yet?</span> <Link to="/account/register">Register a new account</Link>
-          </Alert>
+          </Alert>*/}
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={handleClose} tabIndex={1}>
