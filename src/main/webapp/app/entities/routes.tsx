@@ -128,6 +128,7 @@ import SettlementCurrency from './settlement-currency';
 import CustomerType from './customer-type';
 import GdiMasterDataIndex from './gdi-master-data-index';
 import GdiTransactionDataIndex from './gdi-transaction-data-index';
+import ProductType from './product-type';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 export default () => {
@@ -260,6 +261,7 @@ export default () => {
         <Route path="customer-type/*" element={<CustomerType />} />
         <Route path="gdi-master-data-index/*" element={<GdiMasterDataIndex />} />
         <Route path="gdi-transaction-data-index/*" element={<GdiTransactionDataIndex />} />
+        <Route path="product-type/*" element={<ProductType />} />
         {/* jhipster-needle-add-route-path - JHipster will add routes here */}
       </ErrorBoundaryRoutes>
     </div>

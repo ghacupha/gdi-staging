@@ -123,6 +123,7 @@ import settlementCurrency from 'app/entities/settlement-currency/settlement-curr
 import customerType from 'app/entities/customer-type/customer-type.reducer';
 import gdiMasterDataIndex from 'app/entities/gdi-master-data-index/gdi-master-data-index.reducer';
 import gdiTransactionDataIndex from 'app/entities/gdi-transaction-data-index/gdi-transaction-data-index.reducer';
+import productType from 'app/entities/product-type/product-type.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 const entitiesReducers = {
@@ -251,6 +252,7 @@ const entitiesReducers = {
   customerType,
   gdiMasterDataIndex,
   gdiTransactionDataIndex,
+  productType,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
 };
 

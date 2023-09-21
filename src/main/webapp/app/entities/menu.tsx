@@ -384,6 +384,9 @@ const EntitiesMenu = () => {
       <MenuItem icon="asterisk" to="/gdi-transaction-data-index">
         Gdi Transaction Data Index
       </MenuItem>
+      <MenuItem icon="asterisk" to="/product-type">
+        Product Type
+      </MenuItem>
       {/* jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here */}
     </>
   );

@@ -144,7 +144,8 @@
       "CategoryOfSecurity",
       "NatureOfCustomerComplaints",
       "GdiMasterDataIndex",
-      "GdiTransactionDataIndex"
+      "GdiTransactionDataIndex",
+      "ProductType"
     ],
     "entitySuffix": "",
     "jhiPrefix": "jhi",
