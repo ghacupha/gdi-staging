@@ -14,6 +14,7 @@ import PrivateRoute from 'app/shared/auth/private-route';
 import ErrorBoundaryRoutes from 'app/shared/error/error-boundary-routes';
 import PageNotFound from 'app/shared/error/page-not-found';
 import { AUTHORITIES } from 'app/config/constants';
+import About from 'app/gdi/about/about';
 
 const loading = <div>loading ...</div>;
 
@@ -33,6 +34,7 @@ const AppRoutes = () => {
       <ErrorBoundaryRoutes>
         <Route index element={<Home />} />
         <Route path="login" element={<Login />} />
+        <Route path="about" element={<About />} />
         <Route path="logout" element={<Logout />} />
         <Route path="account">
           <Route
