@@ -84,7 +84,7 @@ module.exports = async options => {
       plugins: [
         new webpack.EnvironmentPlugin({
           // react-jhipster requires LOG_LEVEL config.
-          LOG_LEVEL: development ? 'info' : 'error',
+          LOG_LEVEL: development ? 'debug' : 'error',
         }),
         new webpack.DefinePlugin({
           DEVELOPMENT: JSON.stringify(development),
