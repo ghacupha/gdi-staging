@@ -5,6 +5,7 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const sass = require('sass');
+const environment = require('./environment');
 
 const utils = require('./utils.js');
 const commonConfig = require('./webpack.common.js');
@@ -91,6 +92,10 @@ module.exports = async () =>
       ],
     },
     plugins: [
+      new webpack.DefinePlugin({
+        VERSION: JSON.stringify(environment.VERSION),
+        SERVER_API_URL: JSON.stringify(environment.SERVER_API_URL),
+      }),
       new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         filename: 'content/[name].[contenthash].css',
