@@ -40,7 +40,7 @@ echo "Using nginx configurations on /etc/nginx/conf.d/"
 
 ls -la /etc/nginx/conf.d/
 
-printf "Exploring reverse proxy configurations \n"
+printf "Exploring reconstituted reverse proxy configurations \n"
 
 while read -r line; do
 # Reading each line
