@@ -97,6 +97,43 @@ docker-compose -f src/main/docker/jhipster-control-center.yml up
 
 ## Building for production
 
+### Packaging as forever client
+
+At present, we are having issues with the reverse proxy in nginx, which is unfortunate as in my opinion a docker deployment is more portable. The following deployment process is a temporary work-around:
+
+```
+   npm run build
+
+```
+
+The code in the target directory is copied(manually) into the deployment repo and the following script is ran
+
+```
+
+   forever start http-proxy-server.js
+
+```
+
+To run with debugger:
+
+```
+  set DEBUG=express:* & node index.js
+
+```
+
+To run the most recent setup from the deployment repo run the following:
+
+```
+   git clone https://github.com/ghacupha/gdi-staging-deployment.git
+
+   cd gdi-staging-deployment
+
+   npm install
+
+   forever start http-proxy-server.js
+
+```
+
 ### Packaging as jar
 
 To build the final jar and optimize the gdi-staging application for production, run:
