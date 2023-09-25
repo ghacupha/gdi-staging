@@ -42,6 +42,7 @@ ls -la /etc/nginx/conf.d/
 
 printf "Exploring reconstituted reverse proxy configurations \n"
 
+# todo uncomment if the following refuses cat /etc/nginx/conf.d/default.conf
 while read -r line; do
 # Reading each line
 echo $line
@@ -50,6 +51,13 @@ done < /etc/nginx/conf.d/default.conf
 echo "Launching compilation content on /usr/share/nginx/"
 
 ls -la /usr/share/nginx/
+
+envsubst "${SERVER_API_DOCKER_DEPLOY_HOST}" < /etc/nginx/templates/default.conf.template > /etc/nginx/conf.d/default.conf
+
+while read -r line; do
+# Reading each line
+echo $line
+done < /etc/nginx/conf.d/default.conf
 
 # Finally, let the original Nginx entry point do its work, passing whatever is
 # set for CMD. Use `exec` to replace the current process, to trap any signals
