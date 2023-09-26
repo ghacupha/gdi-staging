@@ -55,9 +55,7 @@ ls -la /etc/nginx/conf.d
 printf "Reviewing the conf.template file... \n\n"
 cat /etc/nginx/conf.d/default.conf.template
 
-envsubst "${SERVER_API_DOCKER_DEPLOY_HOST}" < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf-host
-envsubst "${ERP_DOCUMENTS_MAX_FILE_SIZE}" < /etc/nginx/conf.d//etc/nginx/conf.d/default.conf-host > /etc/nginx/conf.d/default.conf-docs
-envsubst "${SERVER_API_DOCKER_DEPLOY_PORT}" < /etc/nginx/conf.d//etc/nginx/conf.d/default.conf-docs > /etc/nginx/conf.d/default.conf
+envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
 
 while read -r line; do
 # Reading each line
