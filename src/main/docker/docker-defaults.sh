@@ -47,8 +47,7 @@ ls -la /etc/nginx/conf.d
 printf "\n\n Reviewing the conf.template file... \n\n"
 cat /etc/nginx/conf.d/default.conf.template
 
-# removing envsubst and crossing fingers
-# envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
+envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
 
 while read -r line; do
 # Reading each line
