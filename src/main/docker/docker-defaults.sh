@@ -30,29 +30,21 @@ set -eu
 # to set the defaults:
 export SERVER_API_DOCKER_DEPLOY_HOST=${SERVER_API_DOCKER_DEPLOY_HOST:-http://localhost}
 export SERVER_API_DOCKER_DEPLOY_PORT=${SERVER_API_DOCKER_DEPLOY_PORT:-8980}
-export ERP_DOCUMENTS_MAX_FILE_SIZE=${ERP_DOCUMENTS_MAX_FILE_SIZE:-100M}
+export ERP_DOCUMENTS_MAX_FILE_SIZE=${ERP_DOCUMENTS_MAX_FILE_SIZE:-50M}
 # export NODE_OPTIONS=${NODE_OPTIONS:-"--max-old-space-size=8192"}
 
 # Due to `set -u` this would fail if not defined and no default was set above
-echo "Requests proxy configured for /* to ${SERVER_API_DOCKER_DEPLOY_HOST}:${SERVER_API_DOCKER_DEPLOY_PORT} /*"
+printf "\n\n Requests proxy configured for /* to ${SERVER_API_DOCKER_DEPLOY_HOST}:${SERVER_API_DOCKER_DEPLOY_PORT} /*"
 
-echo "Using nginx configurations on /etc/nginx/conf.d/"
-
-ls -la /etc/nginx/conf.d/
-
-printf "Exploring reconstituted reverse proxy configurations \n\n"
-
-cat /etc/nginx/conf.d/default.conf
-
-printf "Launching compilation content on /usr/share/nginx/html \n\n"
+printf "\n\n Launching compilation content on /usr/share/nginx/html \n\n"
 
 ls -la /usr/share/nginx/html
 
-printf "Confirming template folder content... \n\n"
+printf "\n\n Confirming template folder content... \n\n"
 
 ls -la /etc/nginx/conf.d
 
-printf "Reviewing the conf.template file... \n\n"
+printf "\n\n Reviewing the conf.template file... \n\n"
 cat /etc/nginx/conf.d/default.conf.template
 
 envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
