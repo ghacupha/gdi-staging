@@ -40,27 +40,31 @@ echo "Using nginx configurations on /etc/nginx/conf.d/"
 
 ls -la /etc/nginx/conf.d/
 
-printf "Exploring reconstituted reverse proxy configurations \n"
+printf "Exploring reconstituted reverse proxy configurations \n\n"
 
 cat /etc/nginx/conf.d/default.conf
 
-echo "Launching compilation content on /usr/share/nginx/"
+printf "Launching compilation content on /usr/share/nginx/html \n\n"
 
-ls -la /usr/share/nginx/
+ls -la /usr/share/nginx/html
 
 printf "Confirming template folder content... \n\n"
 
-ls -la /etc/nginx/templates/
+ls -la /etc/nginx/conf.d
 
 printf "Reviewing the conf.template file... \n\n"
-cat /etc/nginx/templates/default.conf.template
+cat /etc/nginx/conf.d/default.conf.template
 
-envsubst "${SERVER_API_DOCKER_DEPLOY_HOST}" < /etc/nginx/templates/default.conf.template > /etc/nginx/conf.d/default.conf
+envsubst "${SERVER_API_DOCKER_DEPLOY_HOST}" < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
 
 while read -r line; do
 # Reading each line
 echo "$line"
 done < /etc/nginx/conf.d/default.conf
+
+printf "\n\n Final confirmation template folder content... \n\n"
+
+ls -la /etc/nginx/conf.d
 
 # Finally, let the original Nginx entry point do its work, passing whatever is
 # set for CMD. Use `exec` to replace the current process, to trap any signals

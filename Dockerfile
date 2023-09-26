@@ -35,7 +35,7 @@ RUN npm run webapp:build:prod
 
 # Stage 2
 FROM nginx:1.23.1-alpine
-COPY src/main/docker/nginx/default.conf.template /etc/nginx/templates/default.conf.template
+COPY src/main/docker/nginx/default.conf.template /etc/nginx/conf.d/default.conf.template
 # COPY src/main/docker/nginx/default.conf.template /etc/nginx/conf.d/default.conf.template
 COPY --from=compile-image /opt/app/target/classes/static /usr/share/nginx/html
 
