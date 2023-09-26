@@ -42,15 +42,15 @@ ls -la /etc/nginx/conf.d/
 
 printf "Exploring reconstituted reverse proxy configurations \n"
 
-# todo uncomment if the following refuses cat /etc/nginx/conf.d/default.conf
-while read -r line; do
-# Reading each line
-echo "$line"
-done < /etc/nginx/conf.d/default.conf
+cat /etc/nginx/conf.d/default.conf
 
 echo "Launching compilation content on /usr/share/nginx/"
 
 ls -la /usr/share/nginx/
+
+printf "Confirming template folder content... \n\n"
+
+ls -la /etc/nginx/templates/
 
 printf "Reviewing the conf.template file... \n\n"
 cat /etc/nginx/templates/default.conf.template
