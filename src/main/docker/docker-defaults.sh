@@ -58,10 +58,6 @@ printf "\n\n Final confirmation template folder content... \n\n"
 
 ls -la /etc/nginx/conf.d
 
-printf "\n\n Final confirmation of the index file... \n\n"
-
-cat /usr/share/nginx/html/index.html
-
 # Finally, let the original Nginx entry point do its work, passing whatever is
 # set for CMD. Use `exec` to replace the current process, to trap any signals
 # (like Ctrl+C) that Docker may send it:
