@@ -37,28 +37,24 @@ export SERVER_NAME=${SERVER_NAME:-localhost}
 # Due to `set -u` this would fail if not defined and no default was set above
 # shellcheck disable=SC2059
 printf "\n\n Requests proxy configured for /* to ${SERVER_API_DOCKER_DEPLOY_HOST}:${SERVER_API_DOCKER_DEPLOY_PORT} /*"
+#
+#printf "\n\n Confirming template folder content... \n\n"
+#
+#ls -la /etc/nginx/conf.d
 
-printf "\n\n Launching compilation content on /usr/share/nginx/html \n\n"
+#printf "\n\n Reviewing the conf.template file... \n\n"
+#cat /etc/nginx/conf.d/default.conf.template
 
-ls -la /usr/share/nginx/html
-
-printf "\n\n Confirming template folder content... \n\n"
-
-ls -la /etc/nginx/conf.d
-
-printf "\n\n Reviewing the conf.template file... \n\n"
-cat /etc/nginx/conf.d/default.conf.template
-
-envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
-
-while read -r line; do
-# Reading each line
-echo "$line"
-done < /etc/nginx/conf.d/default.conf
-
-printf "\n\n Final confirmation template folder content... \n\n"
-
-ls -la /etc/nginx/conf.d
+# envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
+#
+#printf "\n\n"
+#
+#while read -r line; do
+## Reading each line
+#echo "$line"
+#done < /etc/nginx/conf.d/default.conf
+#
+#printf "\n\n"
 
 # Finally, let the original Nginx entry point do its work, passing whatever is
 # set for CMD. Use `exec` to replace the current process, to trap any signals
