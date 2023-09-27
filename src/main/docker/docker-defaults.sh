@@ -45,16 +45,16 @@ printf "\n\n Requests proxy configured for /* to ${SERVER_API_DOCKER_DEPLOY_HOST
 #printf "\n\n Reviewing the conf.template file... \n\n"
 #cat /etc/nginx/conf.d/default.conf.template
 
-# envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
-#
-#printf "\n\n"
-#
-#while read -r line; do
-## Reading each line
-#echo "$line"
-#done < /etc/nginx/conf.d/default.conf
-#
-#printf "\n\n"
+envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
+
+printf "\n\n"
+
+while read -r line; do
+# Reading each line
+echo "$line"
+done < /etc/nginx/conf.d/default.conf
+
+printf "\n\n"
 
 # Finally, let the original Nginx entry point do its work, passing whatever is
 # set for CMD. Use `exec` to replace the current process, to trap any signals
