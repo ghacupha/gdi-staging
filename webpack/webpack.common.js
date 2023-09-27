@@ -88,8 +88,8 @@ module.exports = async options => {
         }),
         new webpack.DefinePlugin({
           DEVELOPMENT: JSON.stringify(development),
-          VERSION: JSON.stringify(environment.VERSION),
-          SERVER_API_URL: JSON.stringify(environment.SERVER_API_URL),
+          VERSION: process.env.hasOwnProperty('APP_VERSION') ? process.env.APP_VERSION : 'DEV',
+          SERVER_API_URL: process.env.SERVER_API_URL,
         }),
         new ESLintPlugin({
           baseConfig: {
