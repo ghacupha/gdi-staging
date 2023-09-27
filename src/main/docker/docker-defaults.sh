@@ -31,9 +31,11 @@ set -eu
 export SERVER_API_DOCKER_DEPLOY_HOST=${SERVER_API_DOCKER_DEPLOY_HOST:-http://localhost}
 export SERVER_API_DOCKER_DEPLOY_PORT=${SERVER_API_DOCKER_DEPLOY_PORT:-8980}
 export CLIENT_MAX_FILE_SIZE=${CLIENT_MAX_FILE_SIZE:-50M}
+export SERVER_NAME=${SERVER_NAME:-localhost}
 # export NODE_OPTIONS=${NODE_OPTIONS:-"--max-old-space-size=8192"}
 
 # Due to `set -u` this would fail if not defined and no default was set above
+# shellcheck disable=SC2059
 printf "\n\n Requests proxy configured for /* to ${SERVER_API_DOCKER_DEPLOY_HOST}:${SERVER_API_DOCKER_DEPLOY_PORT} /*"
 
 printf "\n\n Launching compilation content on /usr/share/nginx/html \n\n"
