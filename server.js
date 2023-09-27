@@ -26,7 +26,7 @@ const app = express();
 const SERVER_PORT = process.env.ERP_SYSTEM_DEV_PORT;
 const PORT = process.env.ERP_CLIENT_DEV_PORT;
 const HOST = 'localhost';
-const API_SERVICE_URL = 'http://localhost:' + SERVER_PORT;
+const API_SERVICE_URL = 'http://172.19.0.4:' + SERVER_PORT;
 
 // Logging
 app.use(morgan('dev'));
