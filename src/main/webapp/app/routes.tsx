@@ -69,14 +69,14 @@ const AppRoutes = () => {
             </PrivateRoute>
           }
         />
-        <Route
+        {/*<Route
           path="*"
           element={
             <PrivateRoute hasAnyAuthorities={[AUTHORITIES.DEV]}>
               <EntitiesRoutes />
             </PrivateRoute>
           }
-        />
+        />*/}
         <Route path="*" element={<PageNotFound />} />
       </ErrorBoundaryRoutes>
     </div>
