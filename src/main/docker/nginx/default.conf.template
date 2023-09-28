@@ -3,12 +3,8 @@ server {
     index index.html;
     server_name ${SERVER_NAME};
     client_max_body_size ${CLIENT_MAX_FILE_SIZE};
-    log_format custom_format '$remote_addr - $remote_user [$time_local] '
-                             '"$request" $status $body_bytes_sent '
-                             '"$http_referer" "$http_user_agent" '
-                             'Server host: $host Server port: $server_port';
 
-    access_log /var/log/nginx/access.log custom_format;
+    access_log /var/log/nginx/access.log debug;
     error_log /var/log/nginx/error.log debug;
 
 
